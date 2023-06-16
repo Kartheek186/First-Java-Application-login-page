@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+		<servlet-name>app</servlet-name>
+		<servlet-class>com.v.ValidServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>app</servlet-name>
+		<url-pattern>/valid</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>appf</servlet-name>
+		<servlet-class>com.v.ForgotServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appf</servlet-name>
+		<url-pattern>/forgot</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>appu</servlet-name>
+		<servlet-class>com.v.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appu</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>appr</servlet-name>
+		<servlet-class>com.v.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appr</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+</web-app>
